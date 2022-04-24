@@ -1,0 +1,100 @@
+body {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-template-areas:
+    "menu" "docpage" "docpage"
+    "menu" "docpage" "docpage";
+  font-family: ubuntu, sans-serif;
+}
+
+br {
+  line-height: 1.5rem;
+}
+
+.main-menu {
+  border-style: groove;
+}
+
+h1 {
+  text-align: center;
+}
+
+.menu-section {
+  grid-area: "menu";
+  margin-left: 0px;
+  padding-left: 0px;
+  border-width: thin;
+}
+
+a {
+  color: black;
+  font-family: hack nerd font;
+  font-weight: bold;
+}
+
+.menu-item {
+  line-height: 300%;
+  margin-left: 0px;
+  text-align: center;
+  border-bottom: solid;
+  border-width: thin;
+  list-style-type: none;
+}
+
+.first-menu-item {
+  border-top: solid;
+  border-width: thin;
+}
+
+main {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  grid-area: "docpage";
+}
+
+.main-header {
+  border-top: dashed;
+  border-width: thin;
+  margin-top: 1.5rem;
+  padding-left: 5rem;
+  line-height: 125%;
+}
+
+.first-main-header {
+  border-top: none;
+}
+
+.main-section {
+  font-weight: 300;
+  font-size: 80%
+}
+
+.code {
+  font-family: hack nerd font mono, monospace;
+  margin: 1rem 1.5rem 1.2rem 1.5rem;
+  padding: 0.5rem 2rem 0.5rem 2.5rem;
+  background-color: #D8D9D9;
+}
+
+.span-code {
+  font-family: hack nerd font mono, monospace;
+  background-color: #D8D9D9;
+}
+
+.whitespace {
+  color: #D8D9D9;
+}
+
+@media (max-width: 320px) {
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-areas:
+      "menu" "docpage" "docpage"
+      "menu" "docpage" "docpage";
+    font-family: ubuntu, sans-serif;
+}
+

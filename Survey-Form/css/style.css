@@ -1,0 +1,37 @@
+body {
+  flex: block;
+  text-align: center;
+  background-color: rgb(166 166 166);
+  padding: 5px;
+  margin: 0 400px;
+}
+
+h1 {
+  font-family: sans-serif, serif;
+}
+
+form {
+  border: solid;
+  padding: 20px 35px 50px 55px;  
+  text-align: left;
+  background-color: rgb(76 76 166);
+  display: relative;
+/*   grid-template-columns: auto, 1fr; */
+}
+
+.user-info {
+  display: relative;
+/*   grid-template-columns: auto, 1fr; */
+}
+
+.survey-question {
+  padding: 0.5rem;
+/*   display: grid; */
+  
+}
+
+.user-info {
+  display: grid;
+  
+}
+

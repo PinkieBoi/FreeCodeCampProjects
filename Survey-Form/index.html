@@ -1,0 +1,65 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<DOCTYPE! html>
+
+  <body>
+    <h1 id="title">User Survey</h1>
+    <p id="description">How do you access online services?</p>
+    <form id="survey-form">
+      <div class="user-info">
+        <span>
+        <div class="survey-question">
+          <label for="name" id="name-label">Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+        </div>
+        <div class="survey-question">
+          <label for="email" id="email-label">Email</label><br>
+          <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+        </div>
+        </span>
+        <span>
+        <div class="survey-question">
+          <label for="number" id="number-label">Age</label><br>
+          <input type="number" id="number" name="number" placeholder="Age (18 - 65)" min="18" max="65"><br>
+        </div>
+        <div class="survey-question">
+          <label for="dropdown">Country</label><br>
+          <select id="dropdown">
+            <option value="England">England</option>
+            <option value="Scotland">Scotland</option>
+            <option value="Wales">Wales</option>
+            <option value="Northern Ireland">Northern Ireland</option>
+          </select><br>
+        </div>
+        </span>
+        <div class="survey-question">
+          <label for="gender" id="gender-label">Gender</label><br>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+
+          <input type="radio" id="no-answer" name="gender" value="no-answer">
+          <label for="no-answer">Prefer not to say</label><br>
+        </div>
+        <div class="dotted-bk">
+          <div class="survey-question">
+            <label for="deskotp"></label><br />
+            <input type="checkbox" value="desktop" name="desktop">Desktop</input>
+          <label for="deskop"></label><br />
+            <input type="checkbox" value="tablet" name="tablet">Tablet</input>
+       
+      <label for="mobile"></label><br />
+            <input type="checkbox" value="mobile" name="mobile">Mobile</input><br />
+          </div>
+        </div>
+
+        <div class="survey-question">
+          <label for="comments">Comments</label><br>
+          <textarea value="comments" name="comments" placeholder="Comments"></textarea>
+        </div>
+      </div>
+<button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+
+  </html>
