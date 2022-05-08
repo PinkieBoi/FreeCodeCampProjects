@@ -1,36 +1,48 @@
 body {
-  flex: block;
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.25rem;
   text-align: center;
-  background-color: rgb(166 166 166);
-  padding: 5px;
-  margin: 0 400px;
+  display: block;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #FFE3D8;
 }
 
+/* body {
+  font-family: Ubuntu, fantasy;
+  flex: grid;
+  text-align: center;
+} */
+
 h1 {
-  font-family: sans-serif, serif;
+  font-family: Ubuntu, fantasy, serif;
+  font-weight: 400;
 }
 
 form {
-  border: solid;
   padding: 20px 35px 50px 55px;
   text-align: left;
-  background-color: rgb(76 76 166);
   display: relative;
-/*   grid-template-columns: auto, 1fr; */
+  /* grid-template-columns: auto, 1fr; */
+}
+
+input[type="number"], input[type="text"], input[type="email"] {
+  width: 20rem;
 }
 
 .user-info {
   display: relative;
-/*   grid-template-columns: auto, 1fr; */
+  grid-template-columns: auto, 1fr;
 }
 
 .survey-question {
   padding: 0.5rem;
-/*   display: grid; */
 
 }
 
 .user-info {
   display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
 
 }
