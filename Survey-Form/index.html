@@ -11,34 +11,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/4d3aed646f.js" crossorigin="anonymous"></script>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-  <!-- Main Stylesheet -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/master.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
   <h1 id="title">User Survey</h1>
-  <p id="description">How do you access online services?</p>
-  <form id="survey-form">
+  <h2 id="description">How do you access online services?</h2>
+  <form action="#" id="survey-form">
     <div class="user-info">
       <span>
         <div class="survey-question">
           <label for="name" id="name-label">Name</label><br>
-          <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+          <input type="text" id="name" name="name" placeholder="Name" required><br>
         </div>
         <div class="survey-question">
           <label for="email" id="email-label">Email</label><br>
-          <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+          <input type="email" id="email" name="email" placeholder="Email" required><br>
         </div>
       </span>
       <span>
         <div class="survey-question">
           <label for="number" id="number-label">Age</label><br>
-          <input type="number" id="number" name="number" placeholder="Age (18 - 65)" min="18" max="65"><br>
+          <input type="number" id="number" name="number" placeholder="Age (must be 18+)" min="18"><br>
         </div>
         <div class="survey-question">
           <label for="dropdown">Country</label><br>
@@ -51,10 +48,11 @@
         </div>
       </span>
       <div class="survey-question">
+        <br>
         <fieldset>
           <legend>Gender</legend>
           <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label><br>
+          <label for="male">Male</label>
           <input type="radio" id="female" name="gender" value="female">
           <label for="female">Female</label><br>
           <input type="radio" id="no-answer" name="gender" value="no-answer">
@@ -63,9 +61,10 @@
       </div>
       <div class="dotted-bk">
         <div class="survey-question">
+          <br>
           <fieldset>
             <legend>Device</legend>
-            <label for="deskotp"></label>
+            <label for="desktop"></label>
             <input type="checkbox" value="desktop" name="desktop">Desktop</input>
             <label for="deskop"></label><br />
             <input type="checkbox" value="tablet" name="tablet">Tablet</input>
@@ -77,12 +76,9 @@
 
         </div>
       </div>
-
-      <div class="survey-question">
-
-      </div>
     </div>
-    <button type="submit" id="submit">Submit</button>
+    <br>
+    <button  type="submit" id="submit">Submit</button>
   </form>
 </body>
 

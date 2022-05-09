@@ -4,45 +4,39 @@ body {
   text-align: center;
   display: block;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   background-color: #FFE3D8;
 }
 
-/* body {
-  font-family: Ubuntu, fantasy;
-  flex: grid;
-  text-align: center;
-} */
-
 h1 {
+  font-size: 3rem;
   font-family: Ubuntu, fantasy, serif;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.2rem;
 }
 
 form {
-  padding: 20px 35px 50px 55px;
+  padding: 20px 35px;
   text-align: left;
-  display: relative;
-  /* grid-template-columns: auto, 1fr; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input[type="number"], input[type="text"], input[type="email"] {
-  width: 20rem;
+  width: 25rem;
 }
 
-.user-info {
-  display: relative;
-  grid-template-columns: auto, 1fr;
+textarea {
+  width: 25rem;
+  height: 4rem;
 }
 
 .survey-question {
-  padding: 0.5rem;
-
-}
-
-.user-info {
-  display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
-
+  margin-left: auto;
+  align-items: center;
 }
