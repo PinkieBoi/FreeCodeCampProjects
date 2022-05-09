@@ -1,1 +1,1 @@
-**[FreeCodeCamp](https://www.freecodecamp.org) Projects**
+**[FreeCodeCamp.org](https://www.freecodecamp.org) Projects**
