@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   width: 100vw;
   height: 5rem;
-  background-color: #BBBBBB;
   padding: 1rem 3rem 0 0;
   z-index: 10;
 }
@@ -46,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 18px;
   font-size: 1.4rem;
   font-family: "Ubuntu";
-  /* font-weight: bold; */
   color: black;
 }
 
@@ -105,6 +103,10 @@ hr {
   background-color: red;
 }
 
+#projects a img {
+  width: 100%;
+}
+
 /* Contact Section */
 #contact {
   height: 15vh;
@@ -158,4 +160,3 @@ footer {
     display: block;
   }
 }
-
