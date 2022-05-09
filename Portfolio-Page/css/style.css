@@ -76,8 +76,16 @@ hr {
 
 /* Project Section */
 .even-section {
+  height: 100vh;
   background-color: #03506F;
+  display: grid;
+  grid-template-areas:
+    "heading heading heading"
+    "content content content";
+  grid-gap: 3rem;
   align-items: center;
+  /* justify-content: center; */
+  /* align-content: center; */
   text-align: center;
   margin: 0 auto 0 auto;
 }
@@ -85,6 +93,7 @@ hr {
 .project-title {
   padding-top: 3rem;
   color: #FFE3D8;
+  grid-area: heading;
 }
 
 #projects {
@@ -101,6 +110,7 @@ hr {
 
 .project-tile {
   background-color: red;
+  grid-area: content;
 }
 
 #projects a img {
