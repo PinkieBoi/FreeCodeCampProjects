@@ -3,9 +3,10 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  background-color: #F6EEE6;
 }
 
-h1, h2 {
+h1, header {
   width: 100%;
   text-align: center;
 }
@@ -13,8 +14,7 @@ h1, h2 {
 /* Navigation */
 nav {
   height: 100vh;
-  width: 300px;
-  /* display: inline-block; */
+  width: 275px;
   position: fixed;
   margin: 0;
   padding: 0;
@@ -34,8 +34,7 @@ nav li {
   font-weight: bold;
 }
 
-nav li:first-of-type {
-  padding-top: 3rem;
+nav ul {
   border-top: 0.15rem solid black;
 }
 
@@ -43,28 +42,29 @@ nav li:first-of-type {
 main {
   height: 100vh;
   margin-left: 300px;
-  /* display: inline-block; */
   position: absolute;
   box-sizing: border-box;
 }
 
 .main-section {
-  /* display: block; */
   height: auto;
   width: auto;
-  margin: 2rem;
-  padding: 0 1.2rem;
+  margin: 0 2rem;
+  padding: 2rem 1.2rem;
   text-align: justify;
+}
+
+.units-definition.ul, .units-definition {
+  list-style-type: none;
 }
 
 code {
   background-color: lightgray;
   width: auto;
   display: flex;
-  margin: 0 auto;
+  margin: 0.25rem auto;
   padding: 0.15rem 0;
   justify-content: center;
-  /* padding: 0.5rem 0 0.5rem 25%; */
 }
 
 span {
@@ -81,7 +81,6 @@ span {
   #navbar {
     width: 100%;
     border-right: none;
-    border-bottom: 0.15rem solid black;
     max-height: 250px;
     display: block;
     position: absolute;
@@ -90,8 +89,11 @@ span {
 
   nav ul {
     position: absolute;
+    display: block;
     overflow-y: scroll;
-    list-style-type: circle;
+    border-top: 0.15rem solid black;
+    border-bottom: 0.15rem solid black;
+    max-height: 200px
   }
 
   #navbar li {
@@ -106,7 +108,7 @@ span {
     position: static;
     display: block;
     width: 100%;
-    margin-top: 300px;
+    margin-top: 325px;
     margin-left: auto;
     margin-right: auto;
   }

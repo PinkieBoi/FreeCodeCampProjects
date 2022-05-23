@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!-- TODO: minimum of 5 code elements in the main section -->
+
 <html lang="en" dir="ltr">
 
 <head>
@@ -16,47 +19,89 @@
     <ul>
       <li><a class="nav-link" href="#Height_and_Width">Height and Width</a></li>
       <li><a class="nav-link" href="#Border_and_Border_Raduis">Border and Border Radius</a></li>
-      <li><a class="nav-link" href="#Padding">Padding</a></li>
-      <li><a class="nav-link" href="#Margin">Margin</a></li>
-      <li><a class="nav-link" href="#">section5</a></li>
+      <li><a class="nav-link" href="#Padding_and_Margin">Padding and Margin</a></li>
+      <li><a class="nav-link" href="#The_Display_Property">The Display Property</a></li>
+      <li><a class="nav-link" href="#The_Position_Property">The Position Property</a></li>
+      <li><a class="nav-link" href="#Units">Units</a></li>
     </ul>
   </nav>
   <main id="main-doc">
     <section id="Height_and_Width" class="main-section">
       <header>
-        <h2>Height & Width</h2>
+        Height and Width
       </header>
       <p>The height and width properties set the height and width of the content area <em>unless</em> the <span>box-sizing</span> property is set to <span>border-box</span> in which case the height and width set that of the border area.</p>
     </section>
-    <section id="Border_and_Border_Raduis" class="main-section">
+    <section id="Border_and_Border_Radius" class="main-section">
       <header>
-        <h2>Border and Border Radius</h2>
+        Border and Border Radius
       </header>
       <p>Borders properties can be set individually with the <span>border-width</span>, <span>border-color</span> and <span>border-style</span> properties or usind the shorthand border property setting width color and style in a single line</p>
-      <code>p {
-        <br />&nbsp&nbsp&nbspborder: 2px solid black;<br />}
+      <code>
+        p {<br />&nbsp&nbsp&nbspborder: 2px solid black;<br />}
       </code>
       <p>The border radius property is used to smooth or round corners which can be defined individually in the clockwise pattern (top-left top-right bottom-right bottom-left) or combined in a single value for all 4 corners</p>
     </section>
-    <section id="Padding" class="main-section">
+    <section id="Padding_and_Margin" class="main-section">
       <header>
-        <h2>Padding</h2>
+        Padding and Margin
       </header>
       <p>Padding is the space between the content and border of an element and is defined in the same clockwise fashion</p>
       <code>p {<br>&nbsp&nbsp&nbsppadding: top right bottom left<br />}</code>
       <p>This will occasionally be shortened to <span>top horozontal bottom</span> or <span>vertical horizontal</span>.</p>
+      <p>Margin is the spacing outside the border separating the element from others and is set in the same clockwise fashion as padding and border or individually with <span>margin-top</span>, <span>margin-left</span> etc.</p>
+      <code>div {<br />&nbsp&nbsp&nbsp&nbspmargin: 12px 15px;<br />&nbsp&nbsp&nbsp&nbsppadding: 1px 20px 1px 20px;<br />}</code>
     </section>
-    <section id="Margin" class="main-section">
+    <section id="The_Display_Property" class="main-section">
       <header>
-        <h2>Margin</h2>
+        The Display Property
       </header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>This specifies how the displayed behaviour - the type of rendering box - of the element, most commonly:</p>
+      <p>
+      <ul>
+        <li>Inline ignores width and height while margin and padding push elements away horizontally but not vertically.</li>
+        <li>Block elements break the flow of the document and respect all width, height, margin and padding declerations.</li>
+        <li>Inline-Block elemets behave like inline elements, however width, height, margin and padding are respected both horizontally and vertically.</li>
+        <li>display: none elements are not displayed by the browser.</li>
+      </ul>
+      </p>
     </section>
-    <section id="" class="main-section">
+    <section id="The_Position_Property" class="main-section">
       <header>
+        The Position Property
       </header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>The position property sets how an element is positioned within the document.<br />The top, left, bottom and right properties determine the final location of positioned elements.</p>
+      <p>
+      <ul>
+        <li>Static position is the default in HTML documents.</li>
+        <li>Relative position keeps elements within the flow of the document and we can offset the element relative to it's original place in the document (the original space is respected by other elements).</li>
+        <li>Absolute position removes elements from the flow of the document (their original space is not respected). Top, left, bottom and right position the element relative to the root HTML element.</li>
+        <li>Fixed position removes the element from the flow and no space is created for the element in the document. Fixed elements are positioned relative to the containing block element (good for nav bars).</li>
+        <li>Sticky positioned elements behave as static elements until the user scrolls by them where they stick to the top of the page.</li>
+      </ul>
+      </p>
+    </section>
+    <section id="Units" class="main-section">
+      <header>
+        Units
+      </header>
+      <p>
+        Absolute units such as <span>px</span> (pixels - not necessarily the size of one pixel), <span>cm</span>, <span>mm</span>, <span>in</span>, etc. are fixed values and will not scale.<br />Anything set to 0 does not normally need units.
+      </p>
+      <p>
+        <strong>Percentages</strong> (<span>%</span>) are relative usually to relevant default/preset values either of the element itself or of it's parent.<br />eg.<br />
+        <code>div {<br />&nbsp&nbsp&nbsp&nbspwidth: 50%;<br />}</code>would take up 50% of the width of it's parent element.
+      </p>
+      <p><strong>EMs</strong> - for the size of the upper case M in typography - are relative to the font size of the parent if setting font size, otherwise they are relative to the font size of the element itself.</p>
+      <p>
+        <strong>REMs</strong> - for root EMs - are relative to the font size of the root HTML element so can often be easier to work with as 2rem will always be doube 1rem anywhere in the document.
+      </p>
+      <p>
+        <strong>vw</strong> and <strong>vh</strong> refer to a percentage of the width and hight respectively of the viewport itself.
+      </p>
+      <code>
+        div {<br />&nbsp&nbsp&nbsp&nbspwidth: 100vw;<br />&nbsp&nbsp&nbsp&nbspheight: 100vh;<br />&nbsp&nbsp&nbsp&nbspfont-size: 2rem;}
+      </code>
     </section>
   </main>
 </body>
